@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Округление объема",
+  "version": "1.0",
+  "description": "Расширение для округления объема",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab"
+  ]
+}

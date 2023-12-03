@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+  <title>Округление объема</title>
+  <script src="popup.js"></script>
+  <style type="text/css">
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff5555;
+  font-size: 24px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #55aaff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4499dd;
+}
+
+p#roundedVolume {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+  <h1>Округление объема</h1>
+
+  <form id="volumeForm">
+    <label for="totalVolume">Введите общий объем:</label>
+    <input type="number" id="totalVolume" step="any" required>
+
+    <label for="soldVolume">Введите объем, который продали:</label>
+    <input type="number" id="soldVolume" step="any" required>
+
+    <button type="submit">Рассчитать</button>
+  </form>
+
+  <p id="roundedVolume"></p>
+</body>
+</html>
